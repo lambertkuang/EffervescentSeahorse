@@ -8,7 +8,8 @@
 <ion-view view-title="{{user.displayName}}">
   <ion-content class="padding" id="profile--wrapper">
     <p class='page__title'>PROFILE PAGE</p>
-    <button ng-click='blockUser()'>Block User</button>
+    <button ng-click='blockUser()' ng-hide='showUnblock'>Block User</button>
+    <button ng-click='unblockUser()' ng-show='showUnblock'>Unblock User</button>
     <img ng-src="data:image/png;base64,{{ profpic }}">
     <h2 class='sections'>Bio</h2>
     <div>{{user.bio}}</div>
