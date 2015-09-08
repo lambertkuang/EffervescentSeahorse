@@ -611,3 +611,18 @@ p.button--input--text {
 h2.sections{
   font-size: 15px
 }
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * EVENTS TAB
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+.events--create {
+  font-size: 34px;
+  padding-right: 5px;
+  padding-left: 50px;
+  background-color: pink;
+}
+
+
