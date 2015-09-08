@@ -420,6 +420,7 @@ body {
  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 .friend--lower {
+  position: relative;
   top: 90px;
 }
 
@@ -428,7 +429,18 @@ body {
 }
 
 .friend-text {
-  color: white;
+  font-size: 18px;
+}
+
+.friend-profile {
+  float:right;
+  border: none;
+}
+
+.friend--activity {
+  color: #91CC91;
+  font-style: italic;
+  font-size: 12px;
 }
 
 .rightButton {
