@@ -955,7 +955,7 @@ ul.icon li
   background-color: #3d805b;
   color: white;
   border:none;
-  border-radius: 5px; 
+  border-radius: 5px;
 }
 
 .exInterest{
@@ -986,7 +986,7 @@ ul.icon li
 }
 
 #changeTextArea{
-  background-color:#91CC91; 
+  background-color:#91CC91;
   color:white;
 }
 
@@ -1133,5 +1133,10 @@ input[type=date], input[type=time] {
  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 
 #event--description {
-  margin-top: 200px;
+  margin-top: 50px;
+}
+
+#event--description div {
+  margin-bottom: 5px;
+  font-size: 18px;
 }
