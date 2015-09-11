@@ -45,7 +45,6 @@
                   attendee.pic = snapshot.val().profilepicture;
                 }
                 $timeout(function() {
-                  console.log(vm.attendees.length);
                   for (var i = 0; i < vm.attendees.length; i++) {
                     if (vm.attendees[i].id === attendeeId) {
                       included = true;
@@ -54,7 +53,6 @@
                   if(!included) {
                     vm.attendees.push(attendee);
                   }
-                  console.log('attendees', vm.attendees);
                 });
               });
             });

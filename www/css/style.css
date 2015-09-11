@@ -1017,6 +1017,21 @@ input[type=date], input[type=time] {
   float: right;
 }
 
+#event--item {
+  margin-top: 42px;
+}
+
+.event--item--p {
+  line-height: 20px;
+}
+
+#event--item--des {
+  font-weight: bold;
+}
+
+.odd {
+  background-color: lightgreen;
+}
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
  * EVENTS VIEW
