@@ -7,7 +7,7 @@
 <ion-view>
   <ion-content id="event--item">
     <ion-list>
-      <ion-item ng-class-odd="'odd'" ng-repeat="event in vm.events | filter:search" href="#/events/{{event.eventId}}">
+      <ion-item ng-repeat="event in vm.events | filter:search" href="#/events/{{event.eventId}}">
         <p id="event--item--des" class="event--item--p">{{event.description}}</p>
         <i class="icon ion-chevron-right icon-accessory" id="right--arrow--search"></i>
         <p class="event--item--p">{{event.eventDate}}</p>
