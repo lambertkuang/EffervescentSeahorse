@@ -47,6 +47,7 @@
           password: user.password
         }).then(function(userData) {
           alert('user created successfully!');
+          window.localStorage.uid = userData.uid;
           ref.child('users').child(userData.uid).set({
             email: user.email,
             displayName: user.displayname

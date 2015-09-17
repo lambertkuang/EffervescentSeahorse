@@ -29,7 +29,10 @@
             user.id = fId;
             ref.child('profilepicture').child(fId).once('value', function(snap) {
               if (snap.val()) {
+                console.log(snap.val().profilepicture);
                 user.pic = snap.val().profilepicture;
+              } else {
+                user.pic = userService.getDefaultPicture();
               }
               $timeout(function() {
                 vm.friends.push(user);

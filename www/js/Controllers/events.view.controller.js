@@ -3,14 +3,23 @@
   angular.module('starter.controllers')
     .controller('EventViewCtrl', EventViewCtrl);
 
-    EventViewCtrl.$inject = ['$scope', '$state', '$timeout', '$stateParams', 'eventsService', '$ionicLoading'];
+    EventViewCtrl.$inject = ['$scope', '$state', '$timeout', '$stateParams', 'userService', 'eventsService', '$ionicLoading', '$ionicScrollDelegate'];
 
-    function EventViewCtrl ($scope, $state, $timeout, $stateParams, eventsService, $ionicLoading) {
+    function EventViewCtrl ($scope, $state, $timeout, $stateParams, userService, eventsService, $ionicLoading ,$ionicScrollDelegate) {
       var vm = this;
       console.log('initialized EventViewController');
       var eventId = $stateParams.eventId;
+      vm.eventId = $stateParams.eventId;
       var userId = window.localStorage['uid'];
+
       vm.attendees = [];
+
+      vm.isUser = function(id){
+        return userId === id;
+      }
+
+      $ionicScrollDelegate.scrollTop();
+
       $scope.$on('$ionicView.enter', function(e) {
 
         ref.child('events').child(eventId).on('value', function(snapshot) {
@@ -30,6 +39,7 @@
               });
             }
           }
+          $ionicScrollDelegate.scrollTop();
         });
 
         // get users who are attending the event
