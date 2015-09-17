@@ -46,13 +46,6 @@
           creator: vm.userId
         });
 
-
-        // the creator of the event should join it automatically
-        // ref.child('attendees').once('value', function(snapshot) {
-        //   for (var id in snapshot.val()) {
-        //     if (snapshot.val()[id].creator === )
-        //   }
-        // })
       };
     };
 })();
